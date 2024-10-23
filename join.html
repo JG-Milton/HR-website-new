@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="join.css">
+    <script src="join.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- ______DON'T TOUCH, NAVIGATION BAR!!________  -->
+
+
+   <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a class="active" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="journey.html">Your Journey</a></li>
+        <li><a class="active" href="benefits.html">Your Benefits</a></li>
+        <li><a class="active" href="join.html">Be Part of JG's!</a></li>
+        <li><a class="active" href="faq.html">FAQs</a></li>
+    </ul>
+    <ul class="topnav">
+        <li><a  href="index.html"><img src="image/jayagrocer_logo-removebg-preview.png" alt="Jaya Grocer Logo" class="logo"></a></li>
+        <li><a class="hideOnMobile" href="index.html">Home</a></li>
+        <li><a class="hideOnMobile" href="journey.html">Your Journey</a></li>
+        <li><a class="hideOnMobile" href="benefits.html">Your Benefits</a></li>
+        <li><a class="hideOnMobile" href="join.html">Be Part of JG's!</a></li>
+        <li><a class="hideOnMobile" href="faq.html">FAQs</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+    </nav>
+
+<!-- ========================== TITLE & LINKS =============================================== -->
+
+<div class="head">
+    <div class="title"><h1>Be Part of JGs</h1></div>
+    <div class="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAkxUA_r8wA_shiYzUj0XdzypCB1vyg_SxyAnecqLDnh_muA/viewform">HQ POSITIONS</a></div>
+    <div class="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaH-hFC-j_clllZ5fXkth06nfEH8ZJ3ZfcbO996WuPERDajw/viewform">OUTLET POSITIONS</a></div>
+    <div class="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdNqHe7W0z7zrcCsa9Z1x05a7N40HyIsjc3sYQlg8Xc4Sm8Dg/viewform">INTERNSHIPS</a></div>
+</div>
+
+<!-- ===================== ADDRESS =================================== -->
+<div class="wrapper">
+<div class="address">
+
+    <div class="intro">
+        <h1>Better yet, see us in person!</h1><br>
+    <p>We also practice walk-in interviews in our:</p><br>
+    </div>
+    
+    <div class="hq-address">
+        <p>a. HQ office every Tuesday & Wednesday from 8:00am - 5:00pm <br> 
+              (except weekends & Public Holiday) <br>
+              Location: B-G-17 & B-G-19, Jalan PJS 2B/4, Kampung Medan, 46150 <br>
+              Petaling Jaya, Selangor</p>
+    </div>
+
+    <div class="dc-address">
+        <p>
+            b. Distribution Centre 6 (Warehouse) every Tuesday & Wednesday from <br> 
+            8:00am - 5:00pm (except weekends & Public Holiday)<br>
+            Location: Lot 10, Taman Sains Selangor, 47810, Petaling Jaya, Selangor
+        </p>
+    </div>
+
+    <div class="outlets">
+        <p>
+            c. Nearest stores/outlets around your area <br>
+            (Everyday from 10AM - 6PM)
+        </p>
+    </div>
+
+    
+</div>
+</div>
+
+<div class="or">
+    <h1>OR</h1>
+</div>
+
+<div class="form">
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="email">Email: <span style="color: red">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="attachment">Upload Attachment:</label>
+        <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

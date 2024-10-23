@@ -10,11 +10,14 @@
        flex-direction: column;
        gap: 0.6em;
        box-shadow: 3px 3px 3px darkslategrey;
-       
+       background-image: url(image/landing-page-1.png);
+      background-position: center;
   }
   
   body {
     min-height: 100vh;
+    min-width: 100vw;
+    
     /* background-color: #333; */
   }
   
@@ -112,85 +115,218 @@
   }
 /* SECTION 1 */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    gap: 10px;
-    grid-template-areas: 
-        "header header"
-        "sidebar content"
-        "sidebar content"
-        "sidebar other"
-        "sidebar other";
+.title {
+  /* border: solid 2px; */
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
-/* .grid-item {
-    border: solid 2px;
-} */
+.title h1 {
+  font-size: 1.8em;
+  padding: 5px 15px 15px 15px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-.grid-item-1 {
-    grid-area: header;
+.title p {
+  color: white;
+  font-size: 1em;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+/* ------------SECTION 2---------- */
+
+.career-wrapper {
+  height: 120vh;
+  width: 100vw;
+  /* border: solid 2px; */
+  display: flex;
+}
+
+.career-1 {
+  /* border: solid 2px; */
+  height: 100vh;
+  width: 50vw;
+  background-image: url(image/yourcareer.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;  
+}
+
+
+/* ================ RIGHT SIDE OF PAGE ==================== */
+
+.container:not(.mySlides) {
+  position: relative;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.image-staff {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid 2px blue; */
+  height: 50vh;
+  background-color: transparent;
+}
+
+.shanker {
+  background-image: url(image/shanker.png);
+}
+
+.jess {
+  background-image: url(image/jess.png);
+}
+
+.adrian {
+  background-image: url(image/adrian.png);
+}
+
+.shobhakar {
+  background-image: url(image/staff\ outlet.png);
+}
+
+.aida {
+  background-image: url(image/aida.png);
+}
+
+.afiq {
+  background-image: url(image/afiq.png);
+}
+
+.testimonial p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  /* user-select: none; */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  /* border: solid 2px; */
+}
+
+.mySlides img {
+  object-fit: contain;
+  /* border: solid 2px; */
+  height: 100%;
+  width: 50vw;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: darkslategray;
+  padding: 2px 16px;
+  color: white;
+  /* border: solid 2px blue; */
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.3%;
+  align-content: center;
+  align-items: center;
+  /* border: solid 2px red; */
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.caption-container {
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 978px) {
+  .career-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .career-1 {
+    height: 100vh;
+    width: 100vw;
+    width: auto;
+  }
+  .container {
     justify-content: center;
-    text-align: center;
-    align-items: center;
     align-content: center;
-    font-size: 1.6em;
-    color: red;
-}
-
-.grid-item-2 {
-    grid-area: sidebar;
-    background-image: url(image/yourcareer.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.grid-item-3 {
-    padding: 10px;
-    grid-area: content;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    font-size: 1em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 0.2em;
-}
-
-.grid-item-3 p {
-    letter-spacing: 0rem;
-    padding: 10px;
-}
-
-.grid-item-3 button {
-    margin: 10px 0px 10px 0px;
-    padding: 5px;
-}
-
-.grid-item-4 {
-    grid-area: other;
-    font-size: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: center;
-    text-indent: 1em;
-    padding: 15px;
-    text-align: center;
-    align-content: center;
-    border: solid red 4px;
-    border-radius: 15px;
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(1,1fr); /* Single column */
-      grid-template-areas: 
-      "header"
-      "sidebar"
-      "sidebar"
-      "content"
-      "other";
-      /* height: auto; */
-    }
-
+    align-self: center;
+  }
 }
