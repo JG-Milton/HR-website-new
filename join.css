@@ -139,7 +139,7 @@
     width: 33%;
     margin: 0;
     padding: 0;
-    background-color: blue;
+    background-color: darkslategrey;
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -163,6 +163,7 @@
     border: solid 2px;
     font-size: 1.2em;
     background-color: antiquewhite;
+    line-height: 1.4em;
   }
 
   .dc-address {

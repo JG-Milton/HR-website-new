@@ -10,8 +10,9 @@
        flex-direction: column;
        gap: 0.6em;
        box-shadow: 3px 3px 3px darkslategrey;
-       background-image: url(image/landing-page-1.jpg);
+       background-image: url(image/Wallpaper2.png);
       background-position: center;
+      background-size: cover;
   }
   
   body {
@@ -135,8 +136,9 @@
 
 .title p {
   color: white;
-  font-size: 1em;
+  font-size: 1.4em;
   text-shadow: 2px 2px 5px black;
+  padding: 0px 60px;
 }
 
 
@@ -210,7 +212,7 @@
 }
 
 .afiq {
-  background-image: url(image/afiq.png);
+  background-image: url(image/Afiq\ \(new\).png);
 }
 
 .testimonial p{
@@ -218,6 +220,9 @@
   font-size: 1.2em;
   text-align: center;
   padding: 15px 30px;
+  border: solid 2px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: white;
 }
 
 
