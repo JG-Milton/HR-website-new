@@ -104,7 +104,7 @@ const slides = document.querySelector('.slides');
     submitName.addEventListener('click', () => {
       const name = nameInput.value;
       if (name) {
-        firstSlide.textContent = `Hi there, ${name}`;
+        firstSlide.textContent = `Hi there, ${name}` + "!";
         namePopup.style.display = 'none';
         overlay.style.display = 'none';
       }

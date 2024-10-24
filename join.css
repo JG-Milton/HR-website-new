@@ -8,7 +8,7 @@
   body:not(nav) {
     min-height: 100vh;
     /* background-color: #333; */
-    background-image: url(image/landing-page-1.jpg);
+    background-image: url(image/landing-page-1.png);
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -210,4 +210,77 @@ button {
 }
 button:hover {
     background-color: #218838;
+}
+
+/* ====================ICONS ========================== */
+
+.icons {
+  border: solid 2px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: darkslategrey;
+  color: white;
+}
+
+.icons p {
+  font-size: 1.3em;
+  padding-right: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.icons p:hover ~ a {
+  animation: wobble 0.5s infinite alternate ease;
+}
+
+.fa-brands:hover {
+  animation: wobble 0.5s infinite alternate ease;
+}
+
+
+@keyframes wobble {
+  0% {
+      transform: translateY(-5px);
+    
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  100% {
+  
+      transform: translateY(5px);
+  }
+}
+
+
+.fa-tiktok {
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  background-color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-tiktok:hover {
+  background-color: black;
+  color: white;
+}
+
+.fa-facebook {
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: hsl(240, 82%, 53%);
+  color: white;
+  animation-delay: 1s;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  background-color: white;
+  color: hsl(240, 82%, 53%);
 }
